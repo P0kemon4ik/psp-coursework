@@ -1,0 +1,82 @@
+﻿@model WebApplicationLab.Models.Mobile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mobile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.battery.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.battery.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.color.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.color.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.producer.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producer.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Camera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Camera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
